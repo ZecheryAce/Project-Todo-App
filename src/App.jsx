@@ -10,9 +10,10 @@ function App() {
             <Navbar/>
             <Routes>
                 <Route path="/todos" element={<Todos/>}/>
+                <Route path="/contact" element={<Contact/>}/>
             </Routes>
         </BrowserRouter>
     );
 }
 
-export default App
+export default App;
