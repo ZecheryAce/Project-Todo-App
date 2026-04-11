@@ -23,7 +23,7 @@ function Todos() {
         );
     }
 
-    function deleteTodos(id) {
+    function deleteTodo(id) {
         setTodos(
             todos.filter(todo => todo.id !== id)
         );
@@ -33,10 +33,10 @@ function Todos() {
         if (filter === "completed") return todo.completed;
         if (filter === "incomplete") return !todo.completed;
         return true;
-    })
+    });
 
     return (
-        <div className="container">
+        <div className="container d-flex gap-4">
             <div className="w-50">
                 <TodoForm addTodo={addTodo}/>
             </div>
@@ -44,7 +44,7 @@ function Todos() {
                 <h2>Todo List</h2>
                 <div>
                     <button onClick={() => setFilter("all")}>All</button>
-                    <button onClick={() => setFilter("completed")}>Completed</button>
+                    <button onClick={() => setFilter("completed")}>Completed Test</button>
                     <button onClick={() => setFilter("incomplete")}>Incomplete</button>
                 </div>
 
