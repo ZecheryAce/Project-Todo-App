@@ -1,0 +1,5 @@
+.todoform {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+}

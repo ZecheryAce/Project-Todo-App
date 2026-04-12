@@ -4,5 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/Project-Todo-App/"
+  base: "/Project-Todo-App/",
+  server: {
+    watch: {
+      usePolling: true,
+    }
+  }
 })

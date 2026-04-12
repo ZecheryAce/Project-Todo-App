@@ -1,10 +1,67 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: black;
+}
+
+.navbar-brand {
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(218, 7, 7);
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1020;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.btn {
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgb(218, 7, 7);
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
 }
