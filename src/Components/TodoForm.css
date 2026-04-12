@@ -1,5 +1,23 @@
-.todoform {
-    display: flex;
-    align-items: center;
-    padding: 25px;
+.head-task {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.input-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 75%;
+    background-color: lightgray;
+}
+
+.add-button {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
 }

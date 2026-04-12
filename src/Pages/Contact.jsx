@@ -16,37 +16,52 @@ function Contact() {
         });
     }
 
+    function handleSubmit(e) {
+      e.preventDefault();
+      console.log(form);
+      setForm({
+        firstName: "",
+        lastName: "",
+        email: "",
+        comments: "",
+      });
+    }
+
     return (
-      <div>
-        <h2>Contact Form</h2>
-        <label for="form">First Name</label>
-            <input
-                name="firstName"
-                placeholder="First Name"
-                onChange={handleChange}
-            />
-        <label for="form">Last Name</label>
-            <input
-                name="lastName"
-                placeholder="Last Name"
-                onChange={handleChange}
-            />
-        <label for="form">Email</label>
-            <input 
-                name="email" 
-                placeholder="Email" 
-                onChange={handleChange} 
-            />
-        <label for="form">Comments</label>
+      <form className="form" onSubmit={handleSubmit}>
+        <h2 className="contactForm">Contact Form</h2>
+        <label htmlFor="firstName">First Name:</label>
+        <input
+          name="firstName"
+          value={form.firstName}
+          placeholder="First Name"
+          onChange={handleChange}
+        />
+        <label htmlFor="lastName">Last Name:</label>
+        <input
+          name="lastName"
+          value={form.lastName}
+          placeholder="Last Name"
+          onChange={handleChange}
+        />
+        <label htmlFor="email">Email:</label>
+        <input
+          name="email"
+          value={form.email}
+          placeholder="Email"
+          onChange={handleChange}
+        />
+        <label htmlFor="comments">Comments:</label>
         <textarea
-            name="comments"
-            placeholder="Comments"
-            onChange={handleChange}
+          name="comments"
+          value={form.comments}
+          placeholder="Comments"
+          onChange={handleChange}
         />
         <button type="submit" className="send">
           Send
         </button>
-      </div>
+      </form>
     );
 }
 

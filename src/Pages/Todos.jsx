@@ -44,7 +44,7 @@ function Todos() {
                 <h2>Todo List</h2>
                 <div>
                     <button onClick={() => setFilter("all")}>All</button>
-                    <button onClick={() => setFilter("completed")}>Completed Test</button>
+                    <button onClick={() => setFilter("completed")}>Completed</button>
                     <button onClick={() => setFilter("incomplete")}>Incomplete</button>
                 </div>
 
