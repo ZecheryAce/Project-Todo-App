@@ -1,4 +1,10 @@
+# Name
+- Zechery Acevedo
 
+# Overview
+- A tool based application to allow the user to generate tasks, 
+    mark them as complete, sort the status of the tasks, and 
+    remove them. 
 
 # User Stories #
 [1] As a user, I would like a field where I can add a task 
