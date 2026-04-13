@@ -2,10 +2,19 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-top: 10px;
     color: black;
+    font-weight: 500;
+    
 }
 
 .contactForm {
     text-decoration: underline;
     padding-bottom: 10px;
+}
+
+.send {
+    margin-top: 10px;
+    font-weight: 500;
+    border-radius: 5px;
 }
