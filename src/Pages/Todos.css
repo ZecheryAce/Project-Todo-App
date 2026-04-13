@@ -1,0 +1,13 @@
+.container {
+    display: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+    
+    
+}
+
+.todo-head {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}

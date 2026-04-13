@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoItem from "../Components/TodoItem";
 import TodoForm from "../Components/TodoForm";
+import "./Todos.css";
 
 function Todos() {
     const [todos, setTodos] = useState([]);
@@ -36,28 +37,28 @@ function Todos() {
     });
 
     return (
-        <div className="container d-flex gap-4">
-            <div className="w-50">
-                <TodoForm addTodo={addTodo}/>
-            </div>
-            <div className="w-50">
-                <h2>Todo List</h2>
-                <div>
-                    <button onClick={() => setFilter("all")}>All</button>
-                    <button onClick={() => setFilter("completed")}>Completed</button>
-                    <button onClick={() => setFilter("incomplete")}>Incomplete</button>
-                </div>
-
-                {filteredTodos.map(todo => (
-                    <TodoItem
-                        key={todo.id}
-                        todo={todo}
-                        toggleTodo={toggleTodo}
-                        deleteTodo={deleteTodo}
-                    />
-                ))}
-            </div>
+      <div className="container">
+        <div className="">
+          <TodoForm addTodo={addTodo} />
         </div>
+        <div className="">
+          <h2 className="todo-head">Todo List</h2>
+          <div>
+            <button onClick={() => setFilter("all")}>All</button>
+            <button onClick={() => setFilter("completed")}>Completed</button>
+            <button onClick={() => setFilter("incomplete")}>Incomplete</button>
+          </div>
+
+          {filteredTodos.map((todo) => (
+            <TodoItem
+              key={todo.id}
+              todo={todo}
+              toggleTodo={toggleTodo}
+              deleteTodo={deleteTodo}
+            />
+          ))}
+        </div>
+      </div>
     );
 }
 

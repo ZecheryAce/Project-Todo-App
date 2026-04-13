@@ -1,3 +1,5 @@
+import "./TodoItem.css";
+
 function TodoItem({ todo, toggleTodo, deleteTodo }) {
     return (
         <div className="card">
