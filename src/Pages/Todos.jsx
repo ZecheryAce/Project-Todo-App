@@ -43,12 +43,11 @@ function Todos() {
         </div>
         <div className="">
           <h2 className="todo-head">Todo List</h2>
-          <div>
-            <button onClick={() => setFilter("all")}>All</button>
-            <button onClick={() => setFilter("completed")}>Completed</button>
-            <button onClick={() => setFilter("incomplete")}>Incomplete</button>
+          <div className="aci">
+            <button className="btn-aci" onClick={() => setFilter("all")}>All</button>
+            <button className="btn-aci" onClick={() => setFilter("completed")}>Completed</button>
+            <button className="btn-aci" onClick={() => setFilter("incomplete")}>Incomplete</button>
           </div>
-
           {filteredTodos.map((todo) => (
             <TodoItem
               key={todo.id}

@@ -3,15 +3,15 @@ import "./navbar.css";
 
 function Navbar() {
     return (
-      <nav className="navbar">
-        <Link className="navbar-brand" to="/todos">
+      <nav className="navbar-a">
+        <Link className="navbar-task" to="/todos">
           Task List
         </Link>
         <div>
-          <Link className="btn" to="/todos">
+          <Link className="btn-nav" to="/todos">
             Todos
           </Link>
-          <Link className="btn" to="/contact">
+          <Link className="btn-nav" to="/contact">
             Contact
           </Link>
         </div>

@@ -1,24 +1,44 @@
-.navbar {
+.navbar-a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background: black;
 }
 
-.navbar-brand {
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgb(218, 7, 7);
-    margin: 20px;
-    padding: 10px;
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
+.navbar-task {
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgb(218, 7, 7);
+  margin: 20px;
+  padding: 10px;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-nav {
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgb(218, 7, 7);
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  text-decoration: none;
 }
 
 .navbar a {
@@ -45,20 +65,7 @@
   margin: 10px 0;
 }
 
-.btn {
-    border-radius: 10px;
-    box-shadow: 3px 3px 8px rgb(218, 7, 7);
-    margin: 20px;
-    padding: 10px;
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
-    position: relative;
-}
+
 
 input, textarea {
   display: block;

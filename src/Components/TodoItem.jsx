@@ -2,17 +2,14 @@ import "./TodoItem.css";
 
 function TodoItem({ todo, toggleTodo, deleteTodo }) {
     return (
-        <div className="card">
-            <span
+        <div className="card-list">
+            <span 
                 onClick={() => toggleTodo(todo.id)}
-                style={{
-                    textDecoration: todo.completed ? "line-through" : "none",
-                    cursor: "pointer"
-                }}
+                className={todo.completed ? "completed" : ""}
             >
                 {todo.text}
             </span>
-            <button onClick={() => deleteTodo(todo.id)}>
+            <button className="btn-delete" onClick={() => deleteTodo(todo.id)}>
                 Delete
             </button>
         </div>

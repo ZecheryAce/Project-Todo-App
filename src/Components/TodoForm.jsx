@@ -12,11 +12,11 @@ function TodoForm({ addTodo }) {
     return (
       <form onSubmit={handleSubmit}>
         <h1 className="head-task">Add Task</h1>
-        <input
+        <textarea
           className="input-info"
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Input Information"
+          placeholder="Input Task(s)..."
         />
         <button className="add-button" type="submit">
           Add
