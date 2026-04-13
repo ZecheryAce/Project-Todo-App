@@ -10,6 +10,9 @@
 - The user may utilize the Information Text-box to input tasks and add them.
 - The user can then interact with the newly added task, utilizing the UI assoicated with the task management section.
 
+# Technology Used
+- React / JavaScript / HTML / CSS
+
 # User Stories #
 [1] As a user, I would like a field where I can add a task 
     into a list of things to do. 
