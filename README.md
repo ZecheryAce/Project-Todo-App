@@ -13,7 +13,7 @@
 # Technology Used
 - React / JavaScript / HTML / CSS
 
-# User Stories #
+# User Stories
 [1] As a user, I would like a field where I can add a task 
     into a list of things to do. 
 [2] As a user, I would like the ability to mark off the 
@@ -21,3 +21,9 @@
 [3] As a user, I would like the function of being able to
     remove the Task if I no longer desire it. 
 
+# Looking To The Future
+- Upgraded User Interface.
+- UI given a more polished look. 
+- Ability to categorize Tasks (lists, colors, attributes).
+- Functionality to Save Lists for reuse if user desires. 
+- *Pending Feedback from Users*
